@@ -1,0 +1,20 @@
+
+/* 
+.thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.thumbnails-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.thumbnails-vertical li img {
+    width: 105px;
+    display: block;
+    cursor: pointer;
+	padding-bottom: 15px;
+} */

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 justify-content-center">
+                    <p> Chào mừng bạn đến với COS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-lg-2 col-6 order-1 order-lg-1 logo">
+                <a href="index.html"><img src="images/logo-1.png" alt=""></a>
+            </div>
+            <div class="col-lg-8 col-12 order-3 order-lg-2">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <!-- Nav Toggle Button -->
+                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Links -->
+                    <div class="collapse navbar-collapse lh-lg" id="main_nav">
+                        <ul class="navbar-nav p-3 p-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Trang chủ</a>
+                            </li>
+
+                            <!-- Mega Menu -->
+                            <li class="nav-item dropdown ktm-mega-menu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
+                                <div class="dropdown-menu mega-menu p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Tất cả sản phẩm</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="pr-list.html">Sản phẩm mới</a></li>
+                                                <li><a href="pr-list.html">Combo phối sẵn</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Áo</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="pr-detail.html">Áo thun & áo ba lỗ</a></li>
+                                                <li><a href="pr-detail.html">Áo kiểu</a></li>
+                                                <li><a href="#">Áo sơ mi & áo kiểu</a></li>
+                                                <li><a href="#">Áo len & áo cardigan</a></li>
+                                                <li><a href="#">Áo len & áo cardigan</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Quần & váy đầm</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="#">Quần dài</a></li>
+                                                <li><a href="#">Quần jeans</a></li>
+                                                <li><a href="#">Quần short</a></li>
+                                                <li><a href="#">Váy đầm</a></li>
+                                                <li><a href="#">Chân váy</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <img src="images/cms-1.png" class="w-100" alt="">
+                                            <img src="images/cms-3.png" class="w-100 mt-3" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Khuyến mãi</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deal chớp nhoáng<strong class="float-end">»</strong></a>
+                                        <div class="submenu dropdown-menu mega-submenu p-3">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Giảm giá 15%</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Dropdown item 1</a></li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Dropdown item 2 <strong class="float-end">»</strong>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Submenu item 3 <strong class="float-end">»</strong>
+                                                </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sự kiện</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sự kiện Black Friday<strong class="float-end">»</strong></a>
+                                        <div class="submenu dropdown-menu mega-submenu p-3">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Flash Sale</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <span class="search-title">Nhập từ khoá để tìm kiếm</span>
+                    <div class="search-input-area">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <i class="fa-solid fa-xmark close-search"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 order-2 order-lg-3 text-end">
+                <ul class="nav-icon justify-content-end">
+                    <li><a href="#" class="nav-link search"><i class="fa-solid fa-search"></i></a></li>
+                    <li><a href="user.html" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#" class="nav-link"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-breakcrumb">
+        <h1 class="page-title">Thanh toán</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mb-4">Thanh toán</h1>
+                <div class="line2 my-4"></div>
+                <div class="row">
+                    <div class="col-lg-6 mt-3">
+                        <input type="text" placeholder="Họ" class="form-control">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <input type="text" placeholder="Tên" class="form-control">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <input type="text" placeholder="Địa chỉ" class="form-control">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <input type="text" placeholder="Địa chỉ" class="form-control">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tỉnh / thành phố
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hồ Chí Minh</a></li>
+                                <li><a class="dropdown-item" href="#">Bà Rịa - Vũng Tàu</a></li>
+                                <li><a class="dropdown-item" href="#">Bình Dương</a></li>
+                                <li><a class="dropdown-item" href="#">Bình Phước</a></li>
+                                <li><a class="dropdown-item" href="#">Đồng Nai</a></li>
+                                <li><a class="dropdown-item" href="#">Tây Ninh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Phường
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bến Nghé</a></li>
+                                <li><a class="dropdown-item" href="#">Bến Thành</a></li>
+                                <li><a class="dropdown-item" href="#">Đa Kao</a></li>
+                                <li><a class="dropdown-item" href="#">Tân Định</a></li>
+                                <li><a class="dropdown-item" href="#">Võ Thị Sáu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <input type="text" placeholder="Điện thoại" class="form-control">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order">
+                    <h1>Đơn hàng</h1>
+                    <div class="row cart-line mt-3">
+                        <div class="col-lg-6 col-8">
+                            <h5>Áo cardigan polo pha len x1</h5>
+                        </div>
+                        <div class="col-lg-6 col-4 text-end">
+                            <h5>2.550.000đ</h5>
+                        </div>
+                    </div>
+                    <div class="row cart-line mt-3">
+                        <div class="col-lg-6 col-8">
+                            <h5>Sản phẩm</h5>
+                        </div>
+                        <div class="col-lg-6 col-4 text-end">
+                            <h5>Tạm tính</h5>
+                        </div>
+                    </div>
+                    <div class="row cart-line mt-3">
+                        <div class="col-lg-6 col-8">
+                            <h5>Tổng</h5>
+                        </div>
+                        <div class="col-lg-6 col-4 text-end">
+                            <h5>2.550.000đ</h5>
+                        </div>
+                    </div>
+                    <div class="cart-line paymentoptions mt-3">
+                        <div class="payment-option">
+                            <input type="radio" id="banking" name="payment" checked>
+                            <label for="banking">Chuyển khoản ngân hàng</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cod" name="payment">
+                            <label for="cod">Thanh toán khi nhận hàng </label>
+                        </div>
+                    </div>
+                    <div class="bank-content">
+                        <p>Thực hiện thanh bằng tài khoản ngân hàng. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="cod-content">
+                        <p>Thanh toán khi nhận hàng</p>
+                    </div>
+                    <button class="btn-muangay">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-block d-lg-none">
+                    <h4 class="footer-title">Đăng kí nhận bản tin</h4>
+                    <div class="sub-form">
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Thông tin liên hệ</h4>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>123 Đỗ Xuân Hợp, Phước Long A, quận 9, TP. HCM</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>0353 411 234</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>info@cosfashion.com</p>
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 service">
+                    <h4 class="footer-title">Dịch vụ</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#">Chính sách điều khoản</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách giao nhận vận chuyển</a></li>
+                        <li><a href="">Chính sách thẻ thành viên</a></li>
+                        <li><a href="">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 store">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="footer-title">Khách hàng </h4>
+                            <ul class="nav-footer">
+                                <li><a href="#">Đăng ký</a></li>
+                                <li><a href="#">Đăng nhập</a></li>
+                                <li><a href="#">Thông tin cá nhân</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="footer-title">Giỏ hàng</h4>
+                            <ul class="nav-footer">
+                                <li><a href="#">Giỏ hàng</a></li>
+                                <li><a href="#">Lịch sử mua hàng</a></li>
+                                <li><a href="#">Tra cứu đơn hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 newsletter">
+                            <h4 class="footer-title">Đăng kí nhận bản tin</h4>
+                            <div class="sub-form">
+                                <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                                <button><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Website COS thuộc bản quyền tập đoàn KKK</p>
+                </div>
+                <div class="col-md-6 payment-icon">
+                    <img src="images/payment_1.png" alt="">
+                    <img src="images/payment_2.png" alt="">
+                    <img src="images/payment_3.png" alt="">
+                    <img src="images/payment_4.png" alt="">
+                    <img src="images/payment_5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/price_range_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <style>
+        @media only screen and (max-width: 800px) {
+            /* Force table to not be like tables anymore */
+            #no-more-tables table,
+            #no-more-tables thead,
+            #no-more-tables tbody,
+            #no-more-tables th,
+            #no-more-tables td,
+            #no-more-tables tr {
+            display: block;
+            }
+            
+            /* Hide table headers (but not display: none;, for accessibility) */
+            #no-more-tables thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            }
+            
+            #no-more-tables tr { border: 1px solid #d9d9d9; }
+            
+            #no-more-tables td {
+            /* Behave like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+            white-space: normal;
+            text-align:left;
+            }
+            
+            #no-more-tables td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align:left;
+            font-weight: bold;
+            }
+            
+            /*
+            Label the data
+            */
+            #no-more-tables td:before { content: attr(data-title); }
+            }
+    </style>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 justify-content-center">
+                    <p> Chào mừng bạn đến với COS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-lg-2 col-6 order-1 order-lg-1 logo">
+                <img src="images/logo-1.png" alt="">
+            </div>
+            <div class="col-lg-8 col-12 order-3 order-lg-2">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <!-- Nav Toggle Button -->
+                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Links -->
+                    <div class="collapse navbar-collapse lh-lg" id="main_nav">
+                        <ul class="navbar-nav p-3 p-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Trang chủ</a>
+                            </li>
+
+                            <!-- Mega Menu -->
+                            <li class="nav-item dropdown ktm-mega-menu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
+                                <div class="dropdown-menu mega-menu p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Tất cả sản phẩm</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="pr-list.html">Sản phẩm mới</a></li>
+                                                <li><a href="pr-list.html">Combo phối sẵn</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Áo</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="pr-detail.html">Áo thun & áo ba lỗ</a></li>
+                                                <li><a href="pr-detail.html">Áo kiểu</a></li>
+                                                <li><a href="#">Áo sơ mi & áo kiểu</a></li>
+                                                <li><a href="#">Áo len & áo cardigan</a></li>
+                                                <li><a href="#">Áo len & áo cardigan</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <h3>Quần & váy đầm</h3>
+                                            <ul class="mega-nav">
+                                                <li><a href="#">Quần dài</a></li>
+                                                <li><a href="#">Quần jeans</a></li>
+                                                <li><a href="#">Quần short</a></li>
+                                                <li><a href="#">Váy đầm</a></li>
+                                                <li><a href="#">Chân váy</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <img src="images/cms-1.png" class="w-100" alt="">
+                                            <img src="images/cms-3.png" class="w-100 mt-3" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Khuyến mãi</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deal chớp nhoáng<strong class="float-end">»</strong></a>
+                                        <div class="submenu dropdown-menu mega-submenu p-3">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Giảm giá 15%</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Giới thiệu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Dropdown item 1</a></li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Dropdown item 2 <strong class="float-end">»</strong>
+                                        </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Submenu item 3 <strong class="float-end">»</strong>
+                                                </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sự kiện</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sự kiện Black Friday<strong class="float-end">»</strong></a>
+                                        <div class="submenu dropdown-menu mega-submenu p-3">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Flash Sale</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <span class="search-title">Nhập từ khoá để tìm kiếm</span>
+                    <div class="search-input-area">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <i class="fa-solid fa-xmark close-search"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 order-2 order-lg-3 text-end">
+                <ul class="nav-icon justify-content-end">
+                    <li><a href="#" class="nav-link search"><i class="fa-solid fa-search"></i></a></li>
+                    <li><a href="user.html" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#" class="nav-link"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-breakcrumb">
+        <h1 class="page-title">Giỏ hàng</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="cart-order" id="no-more-tables">
+                    <table class="col-sm-12 table-bordered table-striped table-condensed cf">
+                        <thead class="cf">
+                            <tr>
+                                <th> Xoá </th>
+                                <th> Hình </th>
+                                <th>Tên sản phẩm</th>
+                                <th>Kích thước</th>
+                                <th>Số lượng</th>
+                                <th>Giá tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-title="Xoá"><button class="btn-cart-delete"><i class="fa-solid fa-trash d-lg-block d-md-none d-none"></i><i class="fa-solid fa-xmark d-lg-none d-md-block"></i></button></td>
+                                <td data-title="Hình"><img src="images/pr-1.png" alt=""></td>
+                                <td data-title="Tên sản phẩm">
+                                    <p>Áo cardigan polo pha len</p>
+                                    <p>Màu: Xám</p>
+                                </td>
+                                <td data-title="Kích thước">
+                                    <select class="form-select size-select" aria-label="Chọn size">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </td>
+                                <td data-title="Số lượng">
+                                    <button id="minus"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="number" value="1" id="qty">
+                                    <button id="plus"><i class="fa-solid fa-plus"></i></button>
+                                </td>
+                                <td data-title="Giá tiền">2.550.000đ</td>
+                            </tr>
+                        </tbody>
+                        <p id="empty-cart" class="text-center mt-4 d-none">Giỏ hàng của bạn đang trống.</p>
+                    </table>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 voucher">
+                            <input type="text" placeholder="Mã khuyến mãi">
+                            <button class="btn-muangay">Áp dụng</button>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <button class="btn-muangay">Cập nhập giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="cart-total">
+                    <div class="row cart-sale">
+                        <div class="col-lg-8 col-8">
+                            <p class="cart-title">Bạn đã đạt mức miễn phí giao hàng</p>
+                        </div>
+                        <div class="col-lg-4 col-4">
+                            <p class="cart-price-sale text-end">50.000đ</p>
+                        </div>  
+                    </div>
+                    <h3>Tóm tắt đơn hàng</h3>
+                    <div class="row cart-line">
+                        <div class="col-lg-6 col-8">
+                            <p class="cart-title">Tạm tính</p>
+                        </div>
+                        <div class="col-lg-6 col-4 text-end">
+                            <p class="cart-price">2.550.000đ</p>
+                        </div>  
+                    </div>
+                    <div class="row cart-line">
+                        <div class="col-lg-6 col-8">
+                            <p class="cart-title">Tống tiền hàng</p>
+                        </div>
+                        <div class="col-lg-6 col-4 text-end">
+                            <p class="cart-price">2.550.000đ</p>
+                        </div>  
+                    </div>
+                    <a href="checkout.html" class="btn-shopnow btn-checkout">Thanh toán</a>
+                    <a href="index.html"class="btn-shopnow btn-shopping">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-block d-lg-none">
+                    <h4 class="footer-title">Đăng kí nhận bản tin</h4>
+                    <div class="sub-form">
+                        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Thông tin liên hệ</h4>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>123 Đỗ Xuân Hợp, Phước Long A, quận 9, TP. HCM</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>0353 411 234</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <p>info@cosfashion.com</p>
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 service">
+                    <h4 class="footer-title">Dịch vụ</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#">Chính sách điều khoản</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách giao nhận vận chuyển</a></li>
+                        <li><a href="">Chính sách thẻ thành viên</a></li>
+                        <li><a href="">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 store">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="footer-title">Khách hàng </h4>
+                            <ul class="nav-footer">
+                                <li><a href="#">Đăng ký</a></li>
+                                <li><a href="#">Đăng nhập</a></li>
+                                <li><a href="#">Thông tin cá nhân</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="footer-title">Giỏ hàng</h4>
+                            <ul class="nav-footer">
+                                <li><a href="#">Giỏ hàng</a></li>
+                                <li><a href="#">Lịch sử mua hàng</a></li>
+                                <li><a href="#">Tra cứu đơn hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 newsletter">
+                            <h4 class="footer-title">Đăng kí nhận bản tin</h4>
+                            <div class="sub-form">
+                                <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                                <button><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Website COS thuộc bản quyền tập đoàn KKK</p>
+                </div>
+                <div class="col-md-6 payment-icon">
+                    <img src="images/payment_1.png" alt="">
+                    <img src="images/payment_2.png" alt="">
+                    <img src="images/payment_3.png" alt="">
+                    <img src="images/payment_4.png" alt="">
+                    <img src="images/payment_5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/price_range_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
